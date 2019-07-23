@@ -1,3 +1,49 @@
-h1{
-    color:brown
+@import url('https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker&display=swap');
+
+:root {
+    --main color: black;
+    --accent-color: red;
+    font-family: 'Caveat', cursive;
+}
+body {
+    max-width: 960px;
+    margin: auto;
+}
+
+header .logo{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+}
+header .main-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    min-width: 360px;
+}
+header .main-menu a {
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 1px;
+    padding: 1px 3px 1px 3px;
+    border: 1px solid transparent;
+}
+header .main-menu a:hover {
+    border: 1px solid var(--accent-color);
+}
+@media (min-width:660px) {
+    header nav{
+        display:flex;
+        align-items:center;
+    }
+    header .main-menu{
+        flex: 1;
+    }
+}
+
+header .slider img{
+    width: 100%;
 }
