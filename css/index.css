@@ -6,7 +6,7 @@
     font-family: 'Caveat', cursive;
 }
 body {
-    background: rgba(207, 211, 212, 0.836);
+    background: image(.images/art-background.jpg);
     max-width: 960px;
     margin: auto;
 }
