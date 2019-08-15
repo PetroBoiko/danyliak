@@ -1,3 +1,7 @@
+.navbar-brand {
+    font-family: fantasy;
+    font-size: 2rem;
+}
 .article-one img {
     float: left;
     padding: 5px;
