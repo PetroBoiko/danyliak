@@ -1,62 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker&display=swap');
-
-:root {
-    --main color: black;
-    --accent-color: grey;
-    font-family: 'Caveat', cursive;
-}
-
-header .logo{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 4rem;
-    text-align: center;
-    margin: 0;
-}
-header .main-menu {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    padding: 0;
-    min-width: 360px;
-}
-header .main-menu a {
-    color: var(--main-color);
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 1px;
-    padding: 1px 3px 1px 3px;
-    border: 1px solid transparent;
-}
-header .main-menu a:hover {
-    border: 1px solid var(--accent-color);
-}
-@media (min-width:660px) {
-    header nav {
-        display:flex;
-        align-items:center;
-    }
-    header .main-menu {
-        flex: 1;
-    }
-}
-
-header .slider img {
-    width: 100%;
-} */
-/*
-.about-us {
-    display: grid;
-}
-.about-us img:nth-child(3) {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-row-end: 2;
-    grid-column-end: 2;
-}
-.about-us img:nth-child(odd) {
-    margin: 20px;
-}
-*/
 .article-one img {
     float: left;
     padding: 5px;
@@ -79,12 +20,24 @@ body {
     font-style: italic;
     color: beige;
 }
-.contacts a{
-    display: block;
-}
 .underline {
     text-decoration: underline;
 }
-.float-text img{
+.topics img {
+    margin: 5px;
     float: left;
+}
+.sotial {
+    max-width: 30px;
+    max-height: 30px;
+}
+.contacts p{
+    display: inline;
+    font-size: 1.4rem;
+    padding: 0 20px 0 20px;
+}
+.info {
+    font-style: bold;
+    color: black;
+    text-align: center;
 }
