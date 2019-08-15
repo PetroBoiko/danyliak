@@ -34,7 +34,7 @@ body {
 .contacts p{
     display: inline;
     font-size: 1.4rem;
-    padding: 0 60px 0px 0px;
+    padding: 0 100px 0px 0px;
 }
 .info {
     font-size: 1.5rem;
@@ -46,4 +46,13 @@ body {
 }
 .card-body {
     background-color: beige;
+}
+.contacts {
+    margin: 5px;
+}
+.font br {
+    clear:left;
+}
+.link {
+    font-size: 1.5rem;
 }
