@@ -10,4 +10,6 @@
 //     }
 //     xhr.open("GET" , 'my-info.html', true );
 //     xhr.send();
-}
+//}
+
+new WOW().init();

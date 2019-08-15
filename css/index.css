@@ -37,7 +37,13 @@ body {
     padding: 0 60px 0px 0px;
 }
 .info {
-    font-style: bold;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
+}
+.card {
+    background-color: darkgrey;
+}
+.card-body {
+    background-color: beige;
 }
