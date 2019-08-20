@@ -55,9 +55,17 @@
     </header>
     <main class="container card-font">
         <h1 class="font">Барельєф</h1>
-        <div class="row">
+
+        <section>
+            <h2 id="products">Products</h2>
+            <div class="row products-container">
+               <!--Products are dynamically generated here-->
+            </div>
+        </section>
+
+        <!--<div class="row">
             <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
-                <img src="images/colonums.jpg" class="card-img-top" alt="...">
+                <img src="images/dolphins.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some content.</p>
@@ -88,16 +96,40 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large modal</button>
                 </div>
             </div>
-        </div>
+        </div>-->
     </main>
     <footer class="info">
         <p>Patrick2019</p>
     </footer>
     <!--modal-->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img class="card-img-top" src="" alt="">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary buy" data-id="id">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-            <img src="images/waterfall.jpg" class="card-img-top" alt="...">
+            <img src="images/dolphins.jpg" class="card-img-top" alt="...">
             </div>
         </div>
     </div>
@@ -106,6 +138,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/index.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>
+    <script defer src="js/index.js"></script>
 </body>
 </html>
