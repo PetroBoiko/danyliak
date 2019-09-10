@@ -16,7 +16,7 @@
 body {
     background-image: url("../images/roses.jpg");
     background-repeat: no-repeat;
-    max-width: 1200px;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -59,4 +59,10 @@ body {
 }
 .link {
     font-size: 1.5rem;
+}
+.modal-content {
+    width: 153%;
+}
+.modal-dialog {
+    margin: 0% 22% ;
 }
