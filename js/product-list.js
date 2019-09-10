@@ -17,7 +17,7 @@ class ProductList {
     products.forEach(product => {
       productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
-                    <img class="card-img-top" src="img/products/${
+                    <img class="card-img-top" src="images/${
                       product.image
                     }"
                         alt="${product.title}">
@@ -43,7 +43,7 @@ class ProductList {
       const modal = $('#productInfoModal');
       modal
         .find('.modal-body .card-img-top')
-        .attr('src', 'img/products/' + product.image)
+        .attr('src', 'images/' + product.image)
         .attr('alt', product.title);
       modal.find('.modal-body .card-title').text(product.title);
       modal.find('.modal-body .card-text').text(product.description);

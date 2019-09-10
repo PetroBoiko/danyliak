@@ -60,34 +60,8 @@ class Cart {
       .find('.minus')
       .click(ev => this.changeQuantity(ev, this.deleteProduct));
   }
-  changeQuantity(ev, operation) {
-    const button = $(ev.target);
-    const id = button
-      .parent()
-      .parent()
-      .data('id');
-    operation.call(this, id);
-    this.renderCart();
-  }
+
   updateBadge() {
     $('#cart-badge').text(Object.keys(this.cart).length);
-  }
-  order(ev) {
-    const form = this.cartContainer.find('form')[0];
-    if (form.checkValidity()) {
-      ev.preventDefault();
-      fetch('order', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          clientName: document.querySelector('#client-name').value,
-          clientEmail: document.querySelector('#client-email').value,
-          cart: this.cart
-        })
-      })
-
-    }
   }
 }
