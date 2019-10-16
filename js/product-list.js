@@ -47,15 +47,6 @@ class ProductList {
         .attr('alt', product.title);
       modal.find('.modal-body .card-title').text(product.title);
       modal.find('.modal-body .card-text').text(product.description);
-      modal
-        .find('button.buy')
-        .text(`${product.price} - Buy`)
-        .data('id', id);
-    });
-    $('.card.product button.buy, #productInfoModal button.buy').click(event => {
-      const button = $(event.target);
-      const id = button.data('id');
-      this.cart.addProduct(id);
     });
   }
 }
